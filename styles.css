@@ -1,0 +1,142 @@
+/* ---------------all */
+/* ---------------header */
+header {
+    width:100%; height:70px; position:fixed; top:0; left:0; z-index:999; background:#fff;
+    display:flex; justify-content: space-between; align-items: center;
+    padding:0 30px;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header > nav {}
+header > nav .gnb {display:flex;}
+header > nav .nav_bg {
+    content:''; display:block; width:100%; position:absolute; top:70px; left:0;
+    background:#fff; height:230px;
+}
+header > nav .gnb > li {position:relative; margin-right:100px;}
+header > nav .gnb > li > a {display:block; width:100%; line-height:40px; font-weight:700;}
+header > nav .gnb > li > .sub {position:absolute; z-index:999; background:#fff; overflow:hidden; }
+header > nav .gnb > li > .sub li {}
+header > nav .gnb > li > .sub li a {font-size:0.91rem; display:block; width:100%; line-height:30px; white-space:nowrap;}
+header > nav .gnb > li > .sub li a img {width:170px;}
+header .lnb {display:flex;}
+header .lnb > a {
+    width:20px; height:25px; margin-left:12px;
+    background:url(./images/ico_header.png)
+}
+header .lnb a.my_menu {}
+header .lnb a.notice {background-position:right top;}
+header .lnb a span {display:none;}
+/* header-m-nav */
+header .m_nav {display:none;}
+/* ---------------main */
+/* ---------------main 공통사항 */
+main h1 {font-size:2.5rem; line-height:1.2;}
+main h1 span {font-weight:700;}
+main h2 {color:#888; font-size:1.3rem; line-height:1.3;}
+/* ---------------main 1. visual */
+main {}
+main .visual {
+    height:100vh; 
+    background:url(./images/visual.png) no-repeat center;
+    background-size:cover; 
+    background-attachment: fixed;
+    padding-top:100px;
+    position:relative;
+}
+main .visual .txt {text-align:center; color:#fff;}
+main .visual .txt h1 {font-size:5rem; font-weight: 700;}
+main .visual .txt p {margin:20px 0; font-size:1.2rem;}
+main .visual .txt .link {}
+main .visual .txt .link a {
+    display:inline-block; padding:10px 20px;
+    background:#002c5f; color:#fff;
+}
+main .visual .scroll {
+    text-align:center; width:100%;
+    position:absolute; bottom:100px; left:0;
+    animation:scroll_event 0.8s infinite linear alternate;
+}
+main .visual .scroll img {width:50px; filter:invert(1);}
+/* ---------------main 2. 장점*/
+main .advantage {
+    display:flex;
+    justify-content: space-between;
+    padding:50px 30px;
+}
+main .advantage .title {width:500px;}
+main .advantage .title h1 {}
+main .advantage .title h1 span {}
+main .advantage .title h2 {}
+main .advantage .contents {width:calc(100% - 500px); display:flex; overflow-x:auto; padding-bottom:25px;}
+main .advantage .contents a { margin-right:30px;}
+main .advantage .contents a p {margin-bottom:6px;}
+main .advantage .contents a p img {}
+main .advantage .contents a h2 {
+    color:#002c5f; line-height:1.5;
+}
+main .advantage .contents a h2 em {
+    background:#002c5f; color:#fff; font-size:0.91rem; display:inline-block; padding:5px;
+}
+/* ---------------main 3. design*/
+main .design {height:80vh; position:relative; padding-top:200px;}
+main .design h1 {
+    font-size:15rem; font-weight: 900; color:#ddd;
+    position:absolute; left:50%; transform:translateX(-50%); top:100px;
+    z-index:90;
+}
+main .design .img {text-align:center; position:relative; z-index:100;}
+main .design .img img {width:700px;}
+/* ---------------main 4. */
+main .color_wrap {position:relative;}
+main .color_wrap .title {
+    background:#333; padding:70px 30px;
+}
+main .color_wrap .title h1 {color:#fff;}
+main .color_wrap .title h1 span {}
+main .color_wrap .title h2 {color:#aaa; margin:15px 0;}
+main .color_wrap .title .list {display:flex;}
+main .color_wrap .title .list a {width:32px; height:32px; border-radius:50%; margin-right:10px;}
+main .color_wrap .title .list a span {display:none;}
+main .color_wrap .title .list a:nth-child(1) {background:#fff;}
+main .color_wrap .title .list a:nth-child(2) {background:#aaa;}
+main .color_wrap .title .list a:nth-child(3) {background:#888;}
+main .color_wrap .car {position:relative; top:-100px; overflow:hidden;}
+main .color_wrap .car img {float:right; width:500px;}
+/* ---------------main 5. video */
+main .safety {text-align:center; padding:100px 0; background:#f5f5f5;}
+main .safety h1 {}
+main .safety h2 {margin:20px 0;}
+main .safety video {width:800px;}
+/* ---------------main 6. trim */
+main .trim_info {padding:100px 30px;}
+main .trim_info h1 {}
+main .trim_info h1 span {}
+main .trim_info h2 {margin:10px 0;}
+main .trim_info h2+a {
+    display:inline-block; background:#007fa8; color:#fff; padding:10px 20px;
+    margin-bottom:50px;
+}
+main .trim_info ul {display:flex;}
+main .trim_info ul li {text-align:center; flex:1;}
+main .trim_info ul li .photo {}
+main .trim_info ul li .photo img {width:250px;}
+main .trim_info ul li h2 {color:#007fa8; font-weight: 700;}
+main .trim_info ul li h3 {margin:10px 0; line-height:1.2;}
+main .trim_info ul li .price {}
+main .trim_info ul li .price em {font-size:1.3rem; font-weight:700;}
+/* ---------------footer */
+footer {
+    background:#002c5f; padding:50px 30px; display:flex;
+}
+footer h1 {width:150px;}
+footer h1 a {}
+footer h1 a img {width:100%;}
+footer address {
+    color:#eee; width:calc(100% - 150px); padding-left:50px;
+    display:flex; flex-flow:row wrap;
+}
+footer address span {width:50%; font-size:0.91rem; line-height:30px;}
+footer address span a {color:#eee; text-decoration: underline;}
+footer address span.copy {width:100%;}

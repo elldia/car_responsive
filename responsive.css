@@ -1,0 +1,36 @@
+@media screen and (max-width:1200px){
+    header > nav {display:none}
+    /* 모바일메뉴 */
+    header .m_nav {display:block;}
+    header .m_nav .icon {display:block; width:24px; height:24px;}
+    header .m_nav .icon img {width:100%;}
+    header .m_nav nav {
+        /* display:none; */
+        position:absolute; right:0; top:70px; z-index:999;
+        height:calc(100vh - 70px); width:500px;
+        background:#fff; padding:20px 15px;
+    }
+    header .m_nav nav .gnb > li {width:100%;}
+    header .m_nav nav .gnb > li > a {
+        display:block; border-bottom:1px solid #aaa; width:100%;
+        padding:10px 0; font-weight: 700;
+    }
+    header .m_nav nav .sub {height:auto !important; overflow:hidden;}
+    header .m_nav nav .sub a {line-height:50px; border-bottom:1px dashed #ddd; display:block;}
+    header .m_nav nav .sub a img {width:150px;}
+    /* 메인 */
+}
+@media screen and (max-width:1000px){
+    main .advantage {flex-flow:column nowrap;}
+    main .advantage .title {margin-bottom:20px;}
+    main .advantage .contents {width:100%;}
+    main .design h1 {font-size:10rem;}
+    main .design .img img {width:80%;}
+    main .color_wrap .car img {width:80%; max-width:500px;}
+    main .safety video {width:80%; max-width:800px;}
+}
+@media screen and (max-width:800px){
+    footer {flex-flow:column nowrap;}
+    footer address {width:100%; padding-left:0;}
+    footer address span {width:100%;}
+}
